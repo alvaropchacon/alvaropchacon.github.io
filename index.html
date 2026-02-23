@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cinematic deep-tech portfolio with systems UI aesthetics, project highlights, and subtle 3D ambience."
+    />
+    <title>Alvaro Chacon | Deep-Tech Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="scene-bg" aria-hidden="true"></canvas>
+    <div class="surface-overlay" aria-hidden="true"></div>
+
+    <header class="top-nav" id="home">
+      <a class="brand" href="#home" aria-label="Go to top">A.C</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">
+          EN
+        </button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-block">
+        <p class="section-kicker" data-i18n="heroLabel">Systems UI Portfolio</p>
+        <h1 class="hero-title" data-i18n="heroTitle">Alvaro Chacon</h1>
+        <p class="hero-role" data-i18n="heroRole">Frontend Engineer · 3D Web Developer</p>
+        <p class="hero-copy" data-i18n="heroCopy">
+          I design and ship resilient web systems that merge performance, interaction, and product
+          clarity.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects" data-i18n="heroCtaProjects">View projects</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="heroCtaContact">Contact</a>
+        </div>
+        <a class="scroll-cue" href="#positioning" data-i18n="scrollCue">Scroll to explore</a>
+      </section>
+
+      <section class="section-block reveal" id="positioning">
+        <div class="section-head">
+          <p class="section-index">01</p>
+          <div>
+            <p class="section-kicker" data-i18n="posLabel">Positioning</p>
+            <h2 data-i18n="posTitle">Problem → Solution → Outcome</h2>
+          </div>
+        </div>
+        <p class="section-copy" data-i18n="posCopy">
+          I translate product constraints into robust interfaces: bottlenecks identified, systems
+          refactored, and measurable outcomes delivered.
+        </p>
+        <div class="metrics-grid">
+          <article class="metric-chip">
+            <p class="metric-label" data-i18n="metricPerfLabel">Performance</p>
+            <p class="metric-value">95+</p>
+          </article>
+          <article class="metric-chip">
+            <p class="metric-label" data-i18n="metricA11yLabel">Accessibility</p>
+            <p class="metric-value">WCAG AA</p>
+          </article>
+          <article class="metric-chip">
+            <p class="metric-label" data-i18n="metricReliabilityLabel">Reliability</p>
+            <p class="metric-value">99.95%</p>
+          </article>
+          <article class="metric-chip">
+            <p class="metric-label" data-i18n="metricDeliveryLabel">Delivery</p>
+            <p class="metric-value">-32% Lead Time</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block reveal" id="capabilities">
+        <div class="section-head">
+          <p class="section-index">02</p>
+          <div>
+            <p class="section-kicker" data-i18n="capLabel">Capability Stack</p>
+            <h2 data-i18n="capTitle">Core technical pillars</h2>
+          </div>
+        </div>
+        <div class="pillars-grid">
+          <article class="pillar">
+            <h3 data-i18n="pillarFrontend">Frontend Systems</h3>
+            <p data-i18n="pillarFrontendCopy">Scalable design systems and architecture-first UI.</p>
+          </article>
+          <article class="pillar">
+            <h3 data-i18n="pillar3d">3D Web</h3>
+            <p data-i18n="pillar3dCopy">Real-time visuals with restrained, product-safe motion.</p>
+          </article>
+          <article class="pillar">
+            <h3 data-i18n="pillarPerf">Performance</h3>
+            <p data-i18n="pillarPerfCopy">Profiling, rendering budgets, and Core Web Vitals execution.</p>
+          </article>
+          <article class="pillar">
+            <h3 data-i18n="pillarProduct">Product UI</h3>
+            <p data-i18n="pillarProductCopy">
+              Decision-ready interfaces for critical product workflows.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block reveal" id="projects">
+        <div class="section-head">
+          <p class="section-index">03</p>
+          <div>
+            <p class="section-kicker" data-i18n="projectsLabel">Projects</p>
+            <h2 data-i18n="projectsTitle">Selected deployment history</h2>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <h3>Telemetry Ops Dashboard</h3>
+            <p data-i18n="project1Outcome">
+              Outcome: 48% faster incident diagnosis through real-time observability UI.
+            </p>
+            <p class="project-tags">React · TypeScript · WebSocket · D3</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <h3>Industrial Twin Viewer</h3>
+            <p data-i18n="project2Outcome">
+              Outcome: cut onboarding time by 37% with spatially guided model context.
+            </p>
+            <p class="project-tags">Three.js · GLSL · Node.js · WebRTC</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <h3>Critical Payments Console</h3>
+            <p data-i18n="project3Outcome">
+              Outcome: reduced transaction error rates by 19% via resilient UX patterns.
+            </p>
+            <p class="project-tags">Next.js · GraphQL · Cypress · PostgreSQL</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media" aria-hidden="true"></div>
+            <h3>Edge Metrics Platform</h3>
+            <p data-i18n="project4Outcome">
+              Outcome: improved time-to-insight with low-latency visual analytics pipelines.
+            </p>
+            <p class="project-tags">Svelte · Go · Kafka · ClickHouse</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block reveal" id="about">
+        <div class="section-head">
+          <p class="section-index">04</p>
+          <div>
+            <p class="section-kicker" data-i18n="aboutLabel">About</p>
+            <h2 data-i18n="aboutTitle">Technical profile</h2>
+          </div>
+        </div>
+        <p class="about-copy" data-i18n="aboutCopy">
+          I build production interfaces for high-stakes systems where speed and correctness are
+          non-negotiable. My approach starts with constraints, then architecture, then motion. I
+          prioritize clear information hierarchy, robust state handling, and measurable rendering
+          performance. I collaborate tightly with product and platform teams, and I treat
+          accessibility as a baseline requirement. I ship clean code, maintainable components, and
+          instrumentation that supports long-term operation.
+        </p>
+      </section>
+
+      <section class="final-cta reveal" id="contact">
+        <p class="section-kicker" data-i18n="contactLabel">Final CTA</p>
+        <h2 data-i18n="contactTitle">Let's build something critical.</h2>
+        <p data-i18n="contactCopy">
+          Available for product engineering, systems UI, and performance-driven web projects.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:hello@example.com">email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="system-footer">
+      <p>SYSTEM STATUS: <span class="status-on" data-i18n="systemStatus">OPERATIONAL</span></p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

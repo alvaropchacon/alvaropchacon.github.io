@@ -1,51 +1,30 @@
-# Álvaro Chacón — Interactive Web Developer Portfolio
+# Cinematic Deep-Tech Portfolio
 
-An immersive 3D-powered personal portfolio showcasing modern web development projects, creative experiences, and technical expertise.
+Minimal, structured developer portfolio with a systems-UI aesthetic:
 
-🌐 Live site: https://alvaropchacon.github.io
+- Dark matte visual language with restrained cyan accents
+- Numbered narrative sections (`01 → 04`)
+- Scroll-driven reveals and subtle parallax
+- Lightweight Three.js ambience (drifting particles + gentle camera drift)
+- Accessibility-minded contrast and reduced-motion support
 
----
+## Stack
 
-## 🚀 Overview
+- `index.html`
+- `style.css`
+- `main.js`
+- Three.js via CDN ES module (no bundler)
 
-This portfolio combines modern frontend development with real-time 3D graphics to create an engaging and interactive user experience.  
-Built with performance, clean design, and responsiveness as core principles.
+## Run Locally
 
----
-
-## 🧩 Tech Stack
-
-- HTML5  
-- CSS3  
-- JavaScript (ES6+)  
-- Three.js  
-- Responsive Design  
-
----
-
-## ✨ Features
-
-- Interactive 3D background and visual elements  
-- Smooth animations and transitions  
-- Fully responsive layout  
-- Optimized performance  
-- Clean and maintainable code  
-
----
-
-## 📂 Projects
-
-A curated collection of:
-
-- Professional websites  
-- Creative web experiences  
-- Interactive UI projects  
-- 3D web experiments  
-
----
-
-## 🛠️ Local Setup
+From the project root, run:
 
 ```bash
-git clone git@github.com:alvaropchacon/alvaropchacon.github.io.git
-cd alvaropchacon.github.io
+python3 -m http.server 8080
+```
+
+Then open: `http://localhost:8080`
+
+## Deploy
+
+Push to the repository default branch and serve with GitHub Pages.
